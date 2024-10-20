@@ -1,4 +1,4 @@
-<!-- Vídeo 66 Two way DataBinding-->
+<!-- Vídeo 62 Two way DataBinding-->
 
 <!--
 <h1>Nome: </h1>
@@ -24,7 +24,7 @@
 </ng-template> -->
 
 
-<ng-container *ngIf="minhaProp; then meuTemplate; else meuTemplate2"></ng-container>
+<!-- <ng-container *ngIf="minhaProp; then meuTemplate; else meuTemplate2"></ng-container>
 
 <ng-template #meuTemplate>
     <div style="background-color:red;">Uma div then!</div>
@@ -34,4 +34,22 @@
     <div style="background-color:green;">Uma div else!</div>
 </ng-template> 
 
-<button (click)="toggleProp()">Botão</button>
+<button (click)="toggleProp()">Botão</button> -->
+
+<!-- Vídeo 67 - Diretiva Estrutural - ngFor -->
+
+<div class="list">
+    <div 
+        class="item" 
+        *ngFor="let person of listPeople; let i = index; let isOdd = odd"
+        [class.item--odd]="isOdd"
+        [class.item--highlighted]="personSelectedIndex === i"
+        (click)="selectedPerson(i)"
+    >
+
+        <p class="item__name">{{ i }} - {{person.name}}</p>
+        <p class="item__age">{{person.idade}}</p>
+    </div>
+</div>
+
+
