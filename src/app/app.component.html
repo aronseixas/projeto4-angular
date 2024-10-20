@@ -1,4 +1,37 @@
-<h1>Nome: </h1>
-<input type="text" />
+<!-- Vídeo 66 Two way DataBinding-->
 
-<h1> Nome digitado: {{ name }} </h1>
+<!--
+<h1>Nome: </h1>
+<input 
+    type="text"
+    [(ngModel)] = "name"
+/>
+
+<h1> Nome digitado: {{ name }} </h1> -->
+
+<!--
+[ngModel]="name"    <--input
+(ngModelChange)="handleInputChange($event)"   <--output
+-->
+
+<!-- Vídeo 66 - Diretiva Estrutural - ngIf -->
+<!-- Parte1 - Ajuste no if-else ngIf -->
+
+<!-- <div style="background-color:green;" *ngIf="minhaProp; else meuTemplate" >Uma div!</div>
+
+<ng-template #meuTemplate>
+    <div style="background-color:red;">Uma div 2!</div>
+</ng-template> -->
+
+
+<ng-container *ngIf="minhaProp; then meuTemplate; else meuTemplate2"></ng-container>
+
+<ng-template #meuTemplate>
+    <div style="background-color:red;">Uma div then!</div>
+</ng-template> 
+
+<ng-template #meuTemplate2>
+    <div style="background-color:green;">Uma div else!</div>
+</ng-template> 
+
+<button (click)="toggleProp()">Botão</button>

@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name: string = 'Aron';
+  minhaProp: boolean = false;
+
+  handleInputChange(event: any)
+  {
+    console.log(event);
+    this.name = event;
+  }
+
+  toggleProp()
+  {
+    this.minhaProp = !this.minhaProp;
+  }  
+  
+
 }
