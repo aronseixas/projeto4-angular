@@ -39,17 +39,18 @@
 <!-- Vídeo 67 - Diretiva Estrutural - ngFor -->
 
 <div class="list">
-    <div 
-        class="item" 
-        *ngFor="let person of listPeople; let i = index; let isOdd = odd"
-        [class.item--odd]="isOdd"
-        [class.item--highlighted]="personSelectedIndex === i"
-        (click)="selectedPerson(i)"
-    >
-
-        <p class="item__name">{{ i }} - {{person.name}}</p>
-        <p class="item__age">{{person.idade}}</p>
-    </div>
+    <app-person 
+        *ngFor=
+            "let person of listPeople; 
+            let i = index;
+            let isOdd = odd;"
+        [personName]="person.name"
+        [personIdade]="person.idade"
+        [personIndex]="i"
+        [isOdd]="isOdd"
+        [isSelected]="personSelectedIndex === i"
+        (personSelected)="selectedPerson($event)"
+    ></app-person>
 </div>
 
 

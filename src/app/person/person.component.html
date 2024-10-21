@@ -1,1 +1,11 @@
-<p>person works!</p>
+<div 
+    class="item" 
+    [class.item--odd]="isOdd"
+    [class.item--highlighted]="isSelected"
+    (click)="selectedPerson()"
+>
+
+    <p class="item__name">{{ personIndex }} - {{personName}}</p>
+    <p class="item__age">{{ personIdade }} anos</p>
+
+</div>
