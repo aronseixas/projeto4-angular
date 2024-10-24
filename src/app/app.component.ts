@@ -35,5 +35,31 @@ export class AppComponent {
   //   this.personSelectedIndex = index
   // }
   
+    // Video 69 ngStyle
+
+    fontSize: number = 15;
+    textColor: 'white' | 'orange' = 'white';
+    buttonText: 'Branco' | "Laranja" = 'Branco';
+
+    
+    aumentoFonte()
+    {
+      this.fontSize += 2;
+    }
+
+    trocaCor()
+    {
+      if(this.textColor === 'white')
+      {  
+        this.buttonText = "Branco";
+        this.textColor = 'orange';
+      
+      }
+      else
+      {
+        this.buttonText = "Laranja";
+        this.textColor = 'white';
+      }
+    }
 
 }

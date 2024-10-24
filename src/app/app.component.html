@@ -53,4 +53,10 @@
     ></app-person>
 </div> -->
 
+<h1 [ngStyle]="{
+    'font-size': fontSize + 'px',
+    'color': textColor
+}"> Sou um h1 !!!!</h1>
 
+<button (click)="aumentoFonte()" >A+</button>
+<button (click)="trocaCor()" >{{buttonText}}</button>
