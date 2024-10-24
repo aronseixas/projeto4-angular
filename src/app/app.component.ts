@@ -37,29 +37,44 @@ export class AppComponent {
   
     // Video 69 ngStyle
 
-    fontSize: number = 15;
-    textColor: 'white' | 'orange' = 'white';
-    buttonText: 'Branco' | "Laranja" = 'Branco';
+    // fontSize: number = 15;
+    // textColor: 'white' | 'orange' = 'white';
+    // buttonText: 'Branco' | "Laranja" = 'Branco';
 
     
-    aumentoFonte()
-    {
-      this.fontSize += 2;
-    }
+    // aumentoFonte()
+    // {
+    //   this.fontSize += 2;
+    // }
 
-    trocaCor()
-    {
-      if(this.textColor === 'white')
-      {  
-        this.buttonText = "Branco";
-        this.textColor = 'orange';
+    // trocaCor()
+    // {
+    //   if(this.textColor === 'white')
+    //   {  
+    //     this.buttonText = "Branco";
+    //     this.textColor = 'orange';
       
-      }
-      else
-      {
-        this.buttonText = "Laranja";
-        this.textColor = 'white';
-      }
-    }
+    //   }
+    //   else
+    //   {
+    //     this.buttonText = "Laranja";
+    //     this.textColor = 'white';
+    //   }
+    // }
+
+    // video 70 ng Class
+    // isGreen: boolean = true;
+
+    // setToGreen()
+    // {
+    //   this.isGreen =true;
+    // }
+    // setToOrange()
+    // {
+    //   this.isGreen =false;
+    // }
+
+
+
 
 }
