@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PersonComponent } from './person/person.component';
+import { StatusClassPipes } from './pipes/status-class.pipes';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonComponent
+    PersonComponent,
+    StatusClassPipes,
   ],
   imports: [
     BrowserModule,

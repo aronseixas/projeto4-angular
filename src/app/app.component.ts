@@ -74,7 +74,22 @@ export class AppComponent {
     //   this.isGreen =false;
     // }
 
+    // video 71 Pipes
 
+    // text = 'Aron';
+    // pessoa = {
+    //   nome: 'Arron',
+    //   status: 1,
+    // };
 
+    // pessoa2 = {
+    //   nome: 'Arrron',
+    //   status: 2,
+    // };
+
+    // pessoa3 = {
+    //   nome: 'Arrron',
+    //   status: 3,
+    // };
 
 }

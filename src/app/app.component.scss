@@ -7,16 +7,36 @@
 
 // video 70 ng Class
 
-.is-big {
-    font-size: 50px;
+// .is-big {
+//     font-size: 50px;
+// }
+
+// .is-green {
+//     color: white;
+//     background-color: green;
+// }
+
+// .is-orange {
+//     color: white;
+//     background-color: orange;
+// }
+
+// video 71 pipes
+
+.active
+{
+    color: white;
+    background-color: green
 }
 
-.is-green {
+.parcial 
+{
     color: white;
-    background-color: green;
+    background-color: orange
 }
 
-.is-orange {
+.bloqueio
+{
     color: white;
-    background-color: orange;
+    background-color: red
 }
